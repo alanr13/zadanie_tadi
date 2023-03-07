@@ -1,0 +1,166 @@
+*
+{   
+    box-sizing: border-box;
+    margin: auto;
+    font-family: arial;
+}
+
+#kontener
+{   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#baner
+{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+
+#panel
+{
+    background-color: black;
+}
+
+#main
+{
+    background-color: black;
+    height: 800px;
+    text-align: center;
+}
+
+#stopka
+{
+    background-color: black;
+    height: 174px;
+    display: none;
+}
+
+.wyscig
+{   
+    height: 135px;
+    border: black;
+}
+
+.przycisk
+{
+    background-color: BLACK;
+    display: inline-block;
+    cursor: pointer;
+    height:200px;
+    width:200px;
+    border: black;
+}
+
+#flexbox
+{
+    display: flex;
+    background-color: #888;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.f1
+{   
+    width: 10%;
+    padding: 10px;
+}
+
+.przycisk:hover
+{
+    background-color: rgb(83, 3, 3)
+}
+
+h3
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+#flexbox:hover
+{
+    overflow: auto;
+}
+
+#driver
+{   
+    padding-top: 150px;
+    text-align: center;
+    width: 27%;
+    height: 650px;
+}
+
+#nazwa
+{   
+    float: left;
+    color: silver;
+    text-align: center;
+    width: 27%;
+    margin-left: 80px;
+    display: none;
+}
+
+#driver2
+{
+    text-align: center;
+    width: 33%;
+    height: 750px;
+}
+
+#driver3
+{
+    padding-top: 150px;
+    text-align: center;
+    width: 27%;
+    height: 650px;
+}
+
+#nazwa2
+{   
+    float: left;
+    color: gold;
+    text-align: center;
+    width: 33%;
+    margin-left: 17px;
+    display: none;
+}
+
+#nazwa3
+{   
+    float: left;
+    color: rgb(66, 21, 8);
+    text-align: center;
+    width: 27%;
+    margin-left: 2px;
+    display: none;
+}
+
+#e
+{
+    clear: both;
+    display: none;
+}
+
+#baton
+{
+    margin-top: 200px;
+    background-color: rgb(83, 3, 3);
+    padding: 25px;
+    cursor: pointer;
+    display: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+#baton:hover
+{
+    background-color: rgb(53, 2, 2);
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>...</title>
+    <script src="skrypt.js"></script>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888; 
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+        </style>
+</head>
+<body>
+<div id="kontener">
+    <div id="baner">
+        <h1>MASZYNA LOSUJĄCA PODIUM NA DANY WYŚCIG W SEZONIE 2023</h1>
+        <img src="f1-logo-red.png" class="f1"/>
+    </div>
+    <div id="panel">
+        <div id="flexbox">
+            <div class="tor">
+                <h3>Bahrajn</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Arabia Saudyjska</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image2.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Australia</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image3.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Azerbejdżan</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image4.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Miami</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image5.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Imola</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image6.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Monako</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image7.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Hiszpania</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image8.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Kanada</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image9.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Austria</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image10.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Wielka Brytania</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image11.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Węgry</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image12.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Belgia</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image13.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Holandia</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image14.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Włochy</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image15.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Singapur</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image16.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Japonia</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image17.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Katar</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image18.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>USA</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image19.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Meksyk</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image20.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Brazylia</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image21.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Las Vegas</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image22.png" class="wyscig"/></button>
+            </div>
+            <div class="tor">
+                <h3>Abu Zabi</h3>
+                <button type="button" class="przycisk" onclick="chooseTrack()"><img src="image23.png" class="wyscig"/></button>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="track">
+            <button id="baton" onclick="showImage()">WYLOSUJ ZDOBYWCÓW PODIUM</button>
+        </div>
+            <h3 id="nazwa"></h3>
+            <h3 id="nazwa2"></h3>
+            <h3 id="nazwa3"></h3>
+        <div id="e">
+            <img id="driver"/>
+            <img id="driver2"/>
+            <img id="driver3"/>
+        </div>
+    </div>
+    <div id="stopka">
+    </div>
+</div>
+</body>
+</html>
